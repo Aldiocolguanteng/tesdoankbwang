@@ -16,6 +16,7 @@ nocache('../message/group.js', module => console.log(color('[WATCH]', 'cyan'), c
 
 const starts = async (nino = new WAConnection()) => {
 	nino.logger.level = 'warn'
+        nino.version = [2, 2143, 3]
 	console.log(color(figlet.textSync('Akira', {
 		font: 'Standard',
 		horizontalLayout: 'default',
